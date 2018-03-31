@@ -4,7 +4,7 @@ class Category
 {
     public static function getCategory()
     {
-       $db = Db::getConnect();
+       $db = Db::getConnect();       
        $result = $db->query('Select * from category');
        
        $i = 0;
@@ -12,9 +12,9 @@ class Category
        while ($row = $result->fetch()) 
        {
            $categoryList[$i]['id'] = $row['id'];
-           $categoryList[$i]['name'] = $row['id'];
+           $categoryList[$i]['name'] = $row['name'];
            $i++;
-       }
+       }       
        return $categoryList;
     }
 }

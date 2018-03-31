@@ -11,6 +11,9 @@ class Router
     
     public function run()
     {
-        echo $this -> routes;
+        //$uri = $_SERVER['REQUEST_URI'];
+        //foreach ($this -> routes as $rout){            
+        //}
+            
     }
 }

@@ -1,3 +1,5 @@
 <?php
 
-return "It's work";
+return [
+    ['' => 'site/index']
+];

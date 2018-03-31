@@ -67,10 +67,9 @@
 			<!-- Tabs -->
 			<div class="tabs">
 				<ul>
-				    <li><a href="#" class="active"><span>{{categoryList.name}}</span></a></li>
-				    <li><a href="#"><span>Sport Shoes</span></a></li>
-				    <li><a href="#" class="red"><span>More Shoes</span></a></li>
-                    <li><a href="#" class="active"><span>Safety Shoes</span></a></li>
+					{%for item in categoryList%}
+				    	<li><a href="#" class="active"><span>{{item.name}}</span></a></li>
+				    {%endfor%}
 				</ul>
 			</div>
 			<!-- Tabs -->

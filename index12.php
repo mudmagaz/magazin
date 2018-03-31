@@ -10,8 +10,8 @@ require_once 'vendor/autoload.php';
 $loader = new Twig_Loader_Filesystem('templates');
 $twig = new Twig_Environment($loader);
 $template = $twig->loadTemplate('index.html');
-
-$router = new Router();
-$router -> run();
+echo $template -> render(array());
+//$router = new Router();
+//$router -> run();
 
 
