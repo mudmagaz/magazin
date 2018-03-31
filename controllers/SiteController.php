@@ -3,6 +3,7 @@
 class SiteController
 {
     public function indexAction() {
+        
         $categoryList = Category::getCategory();
         //require_once(ROOT . '/templates/index.html');        
         require_once(ROOT . '/vendor/autoload.php');
