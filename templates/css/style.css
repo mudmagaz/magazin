@@ -112,6 +112,10 @@ h1#logo a{ display:block; height:61px; text-indent: -4000px; background:url(imag
 
 .tabbed { min-height:420px;}
  .im{
-	 width:120px;
+	 width:100px;
 	 height:70px;
+ }
+ .im2{
+	 width:95%;
+	 height:95%;
  }

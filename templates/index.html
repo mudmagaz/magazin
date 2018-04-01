@@ -24,7 +24,7 @@
 		<div id="slider">
 			<div id="slider-holder">
 				<ul>
-				    <li><a href="#"><img src="/templates/css/images/slide2.jpg" alt="" /></a></li>
+				    <li><a href="#"><img src="/templates/css/images/1.png" class="im2" alt="" /></a></li>
 				</ul>
 			</div>
 		</div>
@@ -68,7 +68,7 @@
 			<div class="tabs">
 				<ul>
 					{%for item in categoryList%}
-				    	<li><a href="category/{{item.id}}" class="active"><span>{{item.name}}</span></a></li>
+				    	<li><a href="category/{{item.id}}"><span>{{item.name}}</span></a></li>
 				    {%endfor%}
 				</ul>
 			</div>
@@ -87,13 +87,14 @@
 								{%for item in product%}
 							    <li>
 							    	<div class="image">
-							    		<a href="#"><img class="im" src="templates/css/images/{{item.id}}.jpg";
-    height:80px;" alt="" /></a>
-							    	</div>
+							    		<a href="#"><img class="im" src="templates/css/images/{{item.id}}.jpg"; alt="" /></a>
+									</div></br>
+									<div class="nameprice">
 							    	<p>
 										<span>{{item.name}}</span><br />							    		
 									</p>
 							    	<p class="price">Wholesale Price: <strong>{{item.price}} USD</strong></p>
+									</div>
 							    </li>
 								{%endfor%}
 							    <li>
