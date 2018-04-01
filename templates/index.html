@@ -84,17 +84,18 @@
 						<div class="items">
 							<div class="cl">&nbsp;</div>
 							<ul>
+								{%for item in product%}
 							    <li>
 							    	<div class="image">
 							    		<a href="#"><img src="templates/css/images/image1.jpg" alt="" /></a>
 							    	</div>
 							    	<p>
-							    		Item Number: <span>125515</span><br />
-							    		Size List : <span>8/8.5/9.5/10/11</span><br />
-							    		Brand Name: <a href="#">Adidas Shoes</a>
-							    	</p>
+										<span>{{item.name}}</span><br />
+							    		<span>{{item.price}}</span><br />
+									</p>
 							    	<p class="price">Wholesale Price: <strong>53 USD</strong></p>
 							    </li>
+								{%endfor%}
 							    <li>
 							    	<div class="image">
 							    		<a href="#"><img src="/templates/css/images/image2.jpg" alt="" /></a>
