@@ -11,16 +11,21 @@ class Router
     
     public function run()
     {
-        $uri = $_SERVER['REQUEST_URI'];        
+        $uri = trim($_SERVER['REQUEST_URI'], '/');        
         foreach ($this -> routes as $pattern => $path){                       
-            if (preg_match($pattern, $uri)){
-                $path = preg_replace($pattern, $path, $uri);
+            if (preg_match("~$pattern~", $uri)){
+                $path = preg_replace("~$pattern~", $path, $uri);
                 $pathElements = explode('/', $path);
-                $conctollerName = array_shift($pathElements) . 'Controller';
+                $conctollerName = ucfirst(array_shift($pathElements)) . 'Controller';
                 $methodName = array_shift($pathElements) . 'Action';
-                $parameters = $pathElements;                
+                $parameters = $pathElements;
+                break;
             }
-        }        
+            
+        }
+        //var_dump($conctollerName);
+        //var_dump($methodName);
+        //var_dump($parameters);
         call_user_func_array([$conctollerName, $methodName], $parameters);
     }
 }

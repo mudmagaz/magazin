@@ -8,7 +8,7 @@ header("Cache-Control: post-check=0,pre-check=0", false);
 header("Cache-Control: max-age=0", false);
 header("Pragma: no-cache");
 
-session_start();
+//session_start();
 
 define('ROOT', dirname(__FILE__));
 

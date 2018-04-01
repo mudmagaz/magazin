@@ -22,6 +22,7 @@ class Category
     {
         $db = Db::getConnect();
         $result = $db -> prepare('Select * from product where category_id = :id');
+        //$id = intval($id);
         $result -> execute([':id' => $id]);        
         $categoryProducts = $result -> fetchAll(PDO::FETCH_ASSOC);
         return $categoryProducts;
