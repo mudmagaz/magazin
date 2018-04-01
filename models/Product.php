@@ -1,6 +1,7 @@
 <?php
 class Product
 {
+
     public static function getLatestProducts()
     {
         // Соединение с БД
@@ -23,9 +24,18 @@ class Product
             $productsList[$i]['price'] = $row['price'];
             $productsList[$i]['is_new'] = $row['is_new'];
             $i++;
-        }        
+        }
         return $productsList;
 
     }
-}
+    public static function getProducts($id)
+    {
+        $db = Db::getConnect();
+        $result = $db -> prepare('Select * from product where id = :id');
+        //$id = intval($id);
+        $result -> execute([':id' => $id]);
+        $infoProduct = $result -> fetchAll(PDO::FETCH_ASSOC);
+        return $infoProduct;
+    }
 
+}
