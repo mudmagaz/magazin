@@ -9,7 +9,7 @@ body {
 input, textarea, select { font-family: Arial, sans-serif; font-size:12px; color:#333; }
 textarea { overflow:auto;}
 
-a img { border:0; width:130px }
+a img { border:0;}
 
 a { color:#890000; text-decoration: none; cursor:pointer; }
 a:hover { color:#333; }
@@ -111,7 +111,7 @@ h1#logo a{ display:block; height:61px; text-indent: -4000px; background:url(imag
 .tab-content { display:none;}
 
 .tabbed { min-height:420px;}
- image{
+ .im{
 	 width:120px;
 	 height:70px;
  }
