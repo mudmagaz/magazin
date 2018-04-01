@@ -23,7 +23,7 @@ class Product
             $productsList[$i]['price'] = $row['price'];
             $productsList[$i]['is_new'] = $row['is_new'];
             $i++;
-        }
+        }        
         return $productsList;
 
     }
