@@ -27,26 +27,5 @@ class Product
         return $productsList;
 
     }
-
-
-    public static function getImage($id)
-    {
-        // Название изображения-пустышки
-        $noImage = 'no-image.jpg';
-
-        // Путь к папке с товарами
-        $path = '../templates/css/images/';
-
-        // Путь к изображению товара
-        $pathToProductImage = $path . $id . '.jpg';
-
-        if (file_exists($_SERVER['DOCUMENT_ROOT'] . $pathToProductImage)) {
-            // Если изображение для товара существует
-            // Возвращаем путь изображения товара
-            return $pathToProductImage;
-        }
-
-        // Возвращаем путь изображения-пустышки
-        return $path . $noImage;
-    }    
 }
+
