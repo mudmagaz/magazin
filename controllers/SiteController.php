@@ -2,7 +2,8 @@
 
 class SiteController
 {
-    public function indexAction() {        
+    public function indexAction() 
+    {        
         $categoryList = Category::getCategory();        
         $productsList = Product::getLatestProducts();      
         //require_once(ROOT . '/templates/index.html');        
@@ -12,5 +13,5 @@ class SiteController
         $template = $twig->loadTemplate('index.html');
         echo $template->render(array('categoryList' => $categoryList, 'product' => $productsList));
         return true;        
-    }
+    }    
 }

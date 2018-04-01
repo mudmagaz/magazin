@@ -68,7 +68,7 @@
 			<div class="tabs">
 				<ul>
 					{%for item in categoryList%}
-				    	<li><a href="#" class="active"><span>{{item.name}}</span></a></li>
+				    	<li><a href="category/{{item.id}}" class="active"><span>{{item.name}}</span></a></li>
 				    {%endfor%}
 				</ul>
 			</div>
@@ -87,7 +87,7 @@
 								{%for item in product%}
 							    <li>
 							    	<div class="image">
-							    		<a href="#"><img  src="templates/css/images/{{item.id}}.jpg"  style="width:130px;
+							    		<a href="#"><img  src="templates/css/images/{{item.id}}.jpg";
     height:80px;" alt="" /></a>
 							    	</div>
 							    	<p>
