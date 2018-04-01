@@ -81,23 +81,21 @@
 
                     <!-- First Tab Content -->
                     <div >
-                        <div>
+                        <div style="position: relative">
                             <div class="cl">&nbsp;</div>
                             <ul>
                                 {%for item in product%}
-                                <li>
-                                        <a href="/product/category/{{item.id}}"><img  src="/templates/css/images/{{item.id}}.jpg"; alt="" /></a>
-                                        <p> {{item.name}}</p>
-                                        <p class="price">Wholesale Price: <strong>{{item.price}} USD</strong></p>
-                                        <p>{{item.description}}</p>
-
+                                <br>
+                                        <a  href="/product/category/{{item.id}}"><img  src="/templates/css/images/{{item.id}}.jpg"; alt="" /></a>
+                                    <p class="name"> {{item.name}} </p></br></br>
+                                        <p class="price">Wholesale Price: <strong>{{item.price}} USD</strong></p></br></br>
                                 </li>
-                                {%endfor%}
-
                             </ul>
                             <div class="cl">&nbsp;</div>
-                        </div>
+                            <div class="description">{{item.description}}</div>
+
                     </div>
+                    {%endfor%}
                     <!-- End First Tab Content -->
 
 
