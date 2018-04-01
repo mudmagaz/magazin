@@ -2,10 +2,9 @@
 
 class SiteController
 {
-    public function indexAction() {
-        $categoryList = Category::getCategory();
-        $productsList = Product::getLatestProducts();
-        var_dump($productsList);
+    public function indexAction() {        
+        $categoryList = Category::getCategory();        
+        $productsList = Product::getLatestProducts();      
         //require_once(ROOT . '/templates/index.html');        
         require_once(ROOT . '/vendor/autoload.php');
         $loader = new Twig_Loader_Filesystem(ROOT . '/templates');
