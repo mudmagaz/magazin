@@ -2,25 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f5340c1-f2c6-4591-b1ff-f35c4172a805" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/HP_New_Logo_2D.svg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/Intel-logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/image1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/image2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/image3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/image4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/logo-amd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/logo-genius.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/logo1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/logo2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/logo3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/logo4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/logo5.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/slide1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/css/images/slide2.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/css/images/acer.png" afterPath="$PROJECT_DIR$/templates/css/images/acer.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/css/images/dell.png" afterPath="$PROJECT_DIR$/templates/css/images/dell.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Product.php" afterPath="$PROJECT_DIR$/models/Product.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,14 +91,14 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="113" column="41" lean-forward="false" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+            <state relative-caret-position="595">
+              <caret line="113" column="33" lean-forward="false" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
               <folding>
                 <element signature="e#1219#1225#1" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="e#1917#1923#1" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <marker date="1522615841203" expanded="false" signature="2461:2467" ph=" " />
+                <marker date="1522617776945" expanded="false" signature="2461:2467" ph=" " />
               </folding>
             </state>
           </provider>
@@ -263,12 +244,12 @@
       <workItem from="1522356477365" duration="320000" />
       <workItem from="1522357841056" duration="2313000" />
       <workItem from="1522571032722" duration="377000" />
-      <workItem from="1522578184854" duration="13087000" />
+      <workItem from="1522578184854" duration="13962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19691000" />
+    <option name="totallyTimeSpent" value="20566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="306" y="371" width="1301" height="728" extended-state="0" />
@@ -347,7 +328,7 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="e#1917#1923#1" expanded="true" />
             <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <marker date="1522615841203" expanded="false" signature="2461:2467" ph=" " />
+            <marker date="1522617776945" expanded="false" signature="2461:2467" ph=" " />
           </folding>
         </state>
       </provider>
@@ -385,6 +366,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="114" column="13" lean-forward="false" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/Product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -392,14 +397,6 @@
           <folding>
             <marker date="1522613365944" expanded="true" signature="180:223" ph="SELECT id, n... product" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -430,32 +427,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="114" column="13" lean-forward="false" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="113" column="41" lean-forward="false" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+        <state relative-caret-position="595">
+          <caret line="113" column="33" lean-forward="false" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
           <folding>
             <element signature="e#1219#1225#1" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="e#1917#1923#1" expanded="true" />
             <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <marker date="1522615841203" expanded="false" signature="2461:2467" ph=" " />
+            <marker date="1522617776945" expanded="false" signature="2461:2467" ph=" " />
           </folding>
         </state>
       </provider>
