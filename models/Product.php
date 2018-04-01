@@ -48,5 +48,5 @@ class Product
 
         // Возвращаем путь изображения-пустышки
         return $path . $noImage;
-    }
+    }    
 }

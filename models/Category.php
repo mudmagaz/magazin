@@ -17,4 +17,13 @@ class Category
        }       
        return $categoryList;
     }
+    
+    public static function getCategoryProducts($id)
+    {
+        $db = Db::getConnect();
+        $result = $db -> prepare('Select * from product where category_id = :id');
+        $result -> execute([':id' => $id]);        
+        $categoryProducts = $result -> fetchAll(PDO::FETCH_ASSOC);
+        return $categoryProducts;
+    }
 }

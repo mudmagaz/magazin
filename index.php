@@ -12,11 +12,6 @@ require_once(ROOT.'/components/Autoload.php');
 $router = new Router();
 
 $router -> run();
-/*
-$obj = new SiteController;
-
-$obj -> indexAction();
-*/
 
 
 
