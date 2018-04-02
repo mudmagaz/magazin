@@ -21,7 +21,6 @@ class Category
     {
         $db = Db::getConnect();
         $result = $db -> prepare('Select * from product where category_id = :id');
-        //$id = intval($id);
         $result -> execute([':id' => $id]);
         $categoryProducts = $result -> fetchAll(PDO::FETCH_ASSOC);
         return $categoryProducts;
@@ -30,10 +29,18 @@ class Category
     public static function getInfoProduct($id)
     {
         $db = Db::getConnect();
-        $result = $db -> prepare('Select * from product where id = :id');
-        //$id = intval($id);
+        $result = $db -> prepare('Select * from product where id = :id');        
         $result -> execute([':id' => $id]);
         $infoProduct = $result -> fetchAll(PDO::FETCH_ASSOC);
         return $infoProduct;
+    }
+    
+    public static function quantityCategory($id)
+    {
+        $db = Db::getConnect();
+        $result = $db -> prepare('Select count(*) as count from product where category_id = :id');
+        $result -> execute([':id' => $id]);
+        $categoryQuantity = ($result -> fetch(PDO::FETCH_ASSOC))['count'];
+        return intval($categoryQuantity);        
     }
 }
