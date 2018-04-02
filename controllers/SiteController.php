@@ -4,9 +4,9 @@ class SiteController
 {
     public function indexAction() 
     {        
-        $categoryList = Category::getCategory();        
+        $categoryList = Category::getCategory();       
         $productsList = Product::getLatestProducts();
-        $template = Twig::ConnectTwig('index.html');
+        $template = Twig::connectTwig('index.html');
         echo $template->render(array('categoryList' => $categoryList, 'product' => $productsList));
         return true;        
     }    

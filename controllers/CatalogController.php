@@ -6,7 +6,7 @@ class CatalogController
     {
         $categoryList = Category::getCategory();
         $productsList = Category::getCategoryProducts($id);
-        $template = Twig::ConnectTwig("index.html");
+        $template = Twig::connectTwig("index.html");
         echo $template->render(array('categoryList' => $categoryList, 'product' => $productsList));
         return true;
     }

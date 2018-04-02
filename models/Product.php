@@ -28,6 +28,7 @@ class Product
         return $productsList;
 
     }
+    
     public static function getProducts($id)
     {
         $db = Db::getConnect();

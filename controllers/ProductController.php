@@ -6,7 +6,7 @@ class ProductController
     {
         $categoryList = Category::getCategory();
         $infoProduct = Category::getInfoProduct($id);
-        $template = Twig::ConnectTwig('product.html');
+        $template = Twig::connectTwig('product.html');
         echo $template->render(array( 'product' => $infoProduct, 'categoryList' => $categoryList));
         return true;
     }
