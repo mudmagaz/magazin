@@ -86,7 +86,8 @@
                             <ul>
                                 {%for item in product%}
                                 <br>
-                                        <a  href="/product/category/{{item.id}}"><img class="ppp" src="/templates/css/images/{{item.id}}.jpg"; alt="" /></a>
+                                        <a  href="/product/category/{{item.id}}">
+                                            <img class="ppp" src="/templates/css/images/{{item.id}}.jpg"; alt="" /></a></br></br></br>
                                     <p class="name"> {{item.name}} </p></br></br>
                                         <p class="price"> Price: <strong>{{item.price}} USD</strong></p></br></br>
                                 </li>
