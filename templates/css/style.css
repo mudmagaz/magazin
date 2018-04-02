@@ -123,6 +123,8 @@ h1#logo a{ display:block; height:61px; text-indent: -4000px; background:url(imag
 	 position: absolute; top: 2%; left: 70%;
 	color:indianred;
 	font-size:20px;
+	 line-height: 1.5;
+	 font-style: italic;
 	 text-shadow: 0 1px 0 #ccc,
 	 0 2px 0 #c9c9c9,
 	 0 3px 0 #bbb,
@@ -144,9 +146,17 @@ h1#logo a{ display:block; height:61px; text-indent: -4000px; background:url(imag
 	 0px -5px 35px rgba(255,255,255,0.3);
  }
  .price{
-	 font-size:20px;
+	 font-size:15px;
 	 font-weight: bold;
-	 color:red;
 	 text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
 	 0px -5px 35px rgba(255,255,255,0.3);
+ }
+ span{
+	 font-size:15px;
+	 font-weight: bold;
+	 color: black;
+
+ }
+ .blockproduct{
+	 height: 55px;
  }
