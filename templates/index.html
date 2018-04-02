@@ -102,6 +102,14 @@
 							</ul>
 							<div class="cl">&nbsp;</div>
 						</div>
+						<div><p>Pages</p><div>
+						<div>
+							<ul>
+								{%for page in pages%}
+								<li><a href="/catalog/category/{{page.id_category}}/{{page.page}}">{{page.page}}</a></li>
+								{%endfor%}
+							</ul>
+						</div>
 					</div>
 					<!-- End First Tab Content -->
 					
