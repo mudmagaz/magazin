@@ -17,7 +17,7 @@ class Category
        }       
        return $categoryList;
     }
-    public static function getCategoryProducts($id)
+    public static function getCategoryProducts($id, $page = 1)
     {
         $db = Db::getConnect();
         $result = $db -> prepare('Select * from product where category_id = :id');
@@ -41,6 +41,7 @@ class Category
         $result = $db -> prepare('Select count(*) as count from product where category_id = :id');
         $result -> execute([':id' => $id]);
         $categoryQuantity = ($result -> fetch(PDO::FETCH_ASSOC))['count'];
+        // Возвращает значение типа int
         return intval($categoryQuantity);        
     }
 }
