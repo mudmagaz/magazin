@@ -22,11 +22,6 @@ class Category
         $db = Db::getConnect();
         $result = $db -> prepare("Select * from product where category_id = $id order by name limit $from, $items");
         $result -> execute();
-//         var_dump($result);
-//         var_dump($id);
-//         var_dump($page);
-//         var_dump($from);
-//         var_dump($items);  
         $categoryProducts = $result -> fetchAll(PDO::FETCH_ASSOC);        
         return $categoryProducts;
     }
