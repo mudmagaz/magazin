@@ -1,0 +1,94 @@
+{% extends "base.html"%}
+{% block content%}
+<div id="top">
+
+    <div class="shell">
+
+        <!-- Header -->
+        <div id="header">
+            <h1 id="logo"><a href="#">Urgan Gear</a></h1>
+            <div id="navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">The Store</a></li>
+                    <li class="last"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Header -->
+
+        <!-- Slider -->
+        <div id="slider">
+            <div id="slider-holder">
+                <ul>
+                    <li><a href="#"><img src="/templates/css/images/1.png" class="im2" alt="" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Slider -->
+
+    </div>
+</div>
+<!-- Top -->
+
+<!-- Main -->
+<div id="main">
+    <div class="shell">
+
+        <!-- Search, etc -->
+        <div class="options">
+            <div class="search">
+                <form action="" method="post">
+                    <span class="field"><input type="text" class="blink" value="SEARCH" title="SEARCH" /></span>
+                    <input type="text" class="search-submit" value="GO" />
+                </form>
+            </div>
+            <span class="left"><a href="#">Advanced Search</a></span>
+
+            <div class="right">
+				<span class="cart">
+					<a href="cart/index" class="cart-ico"></a>
+					<strong>$0.00</strong>
+				</span>
+                <span class="left more-links">
+					<a href="#">Checkout</a>
+					<a href="#">Details</a>
+				</span>
+            </div>
+        </div>
+        <!-- End Search, etc -->
+
+        <!-- Content -->
+        <div id="content">
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <ul>
+                    {%for item in categoryList%}
+                    <li><a href="/catalog/category/{{item.id}}"><span>{{item.name}}</span></a></li>
+                    {%endfor%}
+                </ul>
+            </div>
+            <!-- Tabs -->
+
+
+
+                        </div>
+
+                        <!-- Brands -->
+                        <div class="brands">
+                            <h3>Brands</h3>
+                            <div class="logos">
+                                <a href=""><img src="/templates/css/images/acer.png" alt="" /></a>
+                                <a href="#"><img src="/templates/css/images/asus.png" alt="" /></a>
+                                <a href="#"><img src="/templates/css/images/dell.png" alt="" /></a>
+                                <a href="#"><img src="/templates/css/images/hp.png" alt="" /></a>
+                                <a href="#"><img src="/templates/css/images/lenovo.png" alt="" /></a>
+                                <a href="#"><img src="/templates/css/images/samsung.png" alt="" /></a>
+                            </div>
+                        </div>
+
+
+{% endblock %}
